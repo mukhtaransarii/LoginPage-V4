@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Login Switch</title>
+</head>
+<body>
+  <div class="signUp">
+    <form action="https://www.instagram.com/ii.bbs">
+     <h3>Sign Up</h3>
+     <h5>Already have an Account?  <a href="#" id="aha">Sign in</a></h5>
+      <div class="inputBox">
+       <!-- FOR EMAIL -->
+        <label for="email">Email ID* </label>
+        <input type="email" required id="email" placeholder="made by @ii.bbs">
+        
+        <!-- FOR FIRST AND LAST NAME -->
+        <div class="fornameInput">
+        <div class="fname">
+        <label for="fname">First Name*</label>
+        <input type="text" required id="fname">
+        </div>
+        <div class="lname">
+        <label for="lname">Last Name*</label>
+        <input type="text" required id="lname">
+        </div>
+        </div>
+         <!-- FOR PHONE NUMBER  -->
+        <label for="phone">Phone</label>
+        <input type="tel" required id="phone"  maxlength="10" required>
+        <!-- FOR PASSWORD -->
+        <label for="pass">Password* </label>
+        <input type="password" required id="pass">
+      </div>
+    
+       <!-- FOR TERMS AND CONDITIONS  -->
+       <div class="terms">
+       <input type="radio" id="radio" required>
+       <p>Accept all <a href="https://help.instagram.com/581066165581870">Terms & Conditions</a></p>
+       </div> 
+       <!-- FOR SIGN UP BUTTON -->
+        <button type="submit">Sign Up</button> 
+    </form>
+  </div>
+     
+   <!-- FOR SIGN IN PAGE -->
+     <div class="signIn">
+      <form action="https://www.instagram.com/ii.bbs">
+      <h3>Sign In</h3>
+      <h5>I don't Have An Account?  <a href="#"  id="nhcaa">Create An Account</a></h5>
+  
+      <div class="inputBox">
+       <!-- FOR EMAIL -->
+        <label for="email">Email ID* </label>
+        <input type="email" required id="email">
+        
+        <!-- FOR PHONE NUMBER  -->
+        <label for="pass">Password</label>
+        <input type="password" required id="pass" required> 
+      <!-- FOR FORGET PASSWORD  -->
+       <p><a href="#" id="frgtLink">Forget Password</a></p>
+        <!-- FOR SIGN UP BUTTON -->
+        <button type="submit">Sign In</button>
+      </form>
+     </div>
+   </div>
+    
+    
+    <!-- FOR FORGET BUTTON -->
+    <div class="frgtPage">
+         <h3>Forget Password</h3>
+          <h5>No I Remember? <mark>Go back</mark></h5>
+        <form action="#">
+           <div class="inputBox">
+          <label for="email">Enter Email*</label>
+          <input type="email" id="email" required>
+          <label for="otp">Enter OTP*</label>
+          <input type="tel" id="otp" maxlength="6"  required>
+         
+          <label for="pass">New Password*</label>
+          <input type="password" id="pass" required>
+          
+          <label for="pass">New Password confirmation*</label>
+          <input type="password" id="pass" required>
+          </div>
+          <button type="submit" id="resetBtn">Reset Password</button>
+       </form>
+   
+
+    </div>
+ 
+
+    <script src="script.js"></script>
+</body>
+</html>
